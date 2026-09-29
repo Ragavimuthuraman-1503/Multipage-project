@@ -318,7 +318,7 @@ form input{
 }
 .boy {
     height: 400px;
-    width: 300px;
+    width: 260px;
     margin: auto;
 }
 .left{
@@ -343,5 +343,23 @@ form input{
 }
 form{
     padding:30px;
+}
+ .copy{
+    flex-wrap: wrap;
+  }
+   .sec p{
+    font-size: 20px;
+  }
+  .thrd p{
+    font-size: 20px;
+  }
+  .four p{
+    font-size: 20px;
+  }
+  .five p{
+    font-size: 20px;
+  }
+  .hcont h1 {
+    font-size: 40px;
 }
 }

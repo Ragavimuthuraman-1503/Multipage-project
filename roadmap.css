@@ -660,7 +660,7 @@ footer h2{
         opacity: 1;
     }
     .icon2{
-        opacity: 1;
+        opacity: 0;
     }
     .abc:hover .navs{
         left:0%;
@@ -731,7 +731,21 @@ footer h2{
   .bx3 h1 {
     font-size: 40px;
   }
-
+    .sec p{
+    font-size: 20px;
+  }
+  .thrd p{
+    font-size: 20px;
+  }
+  .four p{
+    font-size: 20px;
+  }
+  .five p{
+    font-size: 20px;
+  }
+   .copy{
+    flex-wrap: wrap;
+  }
 
        
 
