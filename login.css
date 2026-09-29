@@ -1,0 +1,347 @@
+
+/*font family*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+      font-family: "Nunito", sans-serif;
+}
+
+/*variables*/
+:root{
+    --h1size:67px;
+    --psize:22px;
+    --pur:#8859F5;
+    --blu:#4561F8;
+    --fts:15px;
+}
+button{
+    border: none;
+}
+/*overall container*/
+
+.container{
+    display: flex;
+    width:85%;
+    margin: auto;
+    padding:30px;
+}
+/*left section*/
+.left{
+    width:50%;
+    background-color: rgba(244, 242, 253, 1);
+    padding:20px;
+    border-radius: 30px;
+}
+/*right section*/
+.right{
+    width:50%;
+    padding: 70px;
+    padding-top: 100px;
+
+}
+/*logo*/
+.logo{
+    height:70px;
+    width:200px;
+}
+.logo>img{
+    height: 100%;
+    width:100%;
+}
+/*icon*/
+.back i{
+    font-size:30px;
+}
+.back button{
+    background-color: transparent;
+}
+/*content*/
+.cont{
+    height: max-content;
+    padding:30px 50px 30px 50px;
+}
+.hcont h1{
+    font-size: 50px;
+}
+.hcont span{
+    background:linear-gradient(90deg, #8859F5,#4561F8);
+    background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+/*paragraph*/
+.par{
+    font-size: var(--psize);
+    margin-top: 7px;
+    width:50%;
+}
+/*image*/
+.boy{
+    height:400px;
+    width:100%;
+}
+.boy img{
+    height:100%;
+    width:100%;
+}
+/*form*/
+form{
+    height: max-content;
+    background-color: white;
+    border-radius: 60px;
+    padding:60px 30px 30px 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.title{
+    text-align: center;
+}
+.email{
+    margin-top:30px;
+    position: relative;
+}
+.pass{
+    margin-top: 30px;
+    position: relative;
+}
+.email h3{
+    margin-bottom: 7px;
+}
+.pass h3{
+    margin-bottom: 7px ;
+}
+/*input*/
+form input{
+    width:100%;
+    background-color: white;
+    border:2px solid rgba(128, 128, 128, 0.662);
+    border-radius: 10px;
+    padding:15px 20px 15px 50px;
+    font-size: 16px;
+}
+.email i{
+    position: absolute;
+    left:20px;
+    font-size: 20px;
+    top:45px;
+    color:rgba(128, 128, 128, 0.664);
+}
+.pass i{
+    position: absolute;
+    left:20px;
+    top:45px;
+    font-size: 20px;
+    color:rgba(128, 128, 128, 0.682);
+}
+/*forgot password*/
+.for{
+    color: var(--pur);
+    text-align: right;
+    margin-top: 7px;
+}
+
+/*button*/
+.log{
+    width:100%;
+    border:none;
+    text-align: center;
+    color:white;
+    padding:18px;
+    border-radius: 15px;
+    font-size: 16px;
+    margin-top: 30px;
+    background-color: white;
+    border: 2px solid rgba(138, 56, 245, 1);
+    color:var(--pur);
+    position: relative;
+    overflow: hidden;
+    
+}
+.log p{
+    z-index: 1;
+    color: black;
+    position:relative;
+    font-size: 18px;
+}
+.glow{
+    position: absolute;
+    height:100%;
+    width:100%;
+    left:0%;
+    top:0px;
+    background-image: linear-gradient(90deg ,#4561F8,#8859F5,#a68ae7);
+    transform: translateX(-100%);
+    transition-duration: 1.3s;
+    border-radius: 15px;
+    z-index: 0;
+   
+}
+.log:hover .glow{
+     transform: translateX(0%);
+}
+
+/*or option*/
+.or{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+.or>div{
+    height:1px;
+    width:30%;
+    background-color: grey;
+}
+.or span{
+    display: inline-block;
+    color:grey;
+    margin:10px;
+}
+/*socail media icon and button*/
+.goo button{
+    border:none;
+    border:2px solid rgba(128, 128, 128, 0.74);
+    font-size: 16px;
+    border-radius: 15px;
+    padding:10px 40px 10px 40px;
+    background-color: white;
+}
+/*hover of button*/
+.goo button:first-child:hover{
+           background-image: linear-gradient(90deg,rgba(138, 56, 245, 1),rgba(68, 98, 248, 1));
+    color:white;
+}
+.goo button:nth-child(2):hover{
+           background-image: linear-gradient(90deg,rgba(138, 56, 245, 1),rgba(68, 98, 248, 1));
+    color:white;
+}
+.goo{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    margin-top:20px;
+}
+.goo i{
+    margin-right: 10px;
+}
+/*sign in*/
+.acc{
+    color:grey;
+    text-align: center;
+    margin-top:30px;
+}
+.acc span{
+    color:var(--pur);
+    display: inline-block;
+    margin-left: 7px;
+}
+.acc span:hover{
+    transform: scale(1.1);
+}
+/*copuright*/
+.cp{
+    text-align: center;
+    margin-top: 30px;
+    color:grey;
+    font-size: 18px;
+
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1246px){
+    
+.boy {
+    height: 600px;
+    width: 400px
+}
+.cont {
+    padding: 30px 20px 30px 20px;
+}
+.par{
+    width:100%;
+}
+.goo{
+    flex-wrap: wrap;
+}
+.container{
+    width: 100%;
+}
+.right{
+    padding: 30px;
+}
+}
+@media only screen and (max-width:900px){
+    .container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.boy {
+    height: 600px;
+    width: 500px;
+    margin: auto;
+}
+.left{
+    width: 100%;
+    
+}
+.hcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.par{
+    width:100%;
+}
+.right{
+    width: 100%;
+}
+}
+@media only screen and (max-width:600px){
+    .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    
+}
+.boy {
+    height: 400px;
+    width: 300px;
+    margin: auto;
+}
+.left{
+    width: 100%;
+    
+}
+.or>div{
+    display: none;
+}
+.hcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.par{
+    width:100%;
+    font-size: 17px;
+}
+.right{
+    width: 100%;
+    padding:10px;
+}
+form{
+    padding:30px;
+}
+}

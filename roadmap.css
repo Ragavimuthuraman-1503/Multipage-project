@@ -1,0 +1,738 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*font family*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body{
+      font-family: "Nunito", sans-serif;
+}
+
+/*variables*/
+:root{
+    --h1size:67px;
+    --psize:22px;
+    --pur:#8859F5;
+    --blu:#4561F8;
+    --fts:15px;
+}
+button{
+    border: none;
+}
+/*overall container*/
+.overall{
+    height:100vh;
+
+    
+}
+
+/*navbar*/
+.nav{
+    background-color: white;
+    position: fixed;
+    z-index: 99;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    left:50%;
+    transform: translatex(-50%);
+}
+/*logo image*/
+.logo{
+    height:75px;
+    width:250px;
+    margin-left:20px;
+}
+/*navbars opption*/
+.navs{
+    font-size:20px;
+    gap:30px;
+    display: flex;
+    transition-duration: 2s;
+}
+.navs a{
+    position: relative;
+    padding:5px 10px 5px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black; 
+    border-radius: 20px;
+    transition-duration: 0.5s;
+}
+/*hover of nav a*/
+.navs a:hover{
+    background-color: #664AFA;
+    color:white;
+    border-radius: 20px;
+}
+.icon{
+    font-size:25px;
+    opacity: 0;
+}
+
+/*for responsive input */
+input:checked+.navs{
+    left:-10px;
+}
+.res{
+    display: none;
+}
+/*input*/
+.typehere{
+    border:none;
+    background-color: transparent;
+    padding:10px 10px 10px 40px;
+    border:1px solid rgba(128, 128, 128, 0.522);
+    border-radius: 30px;
+    font-size: 20px;
+    width:240px;
+}
+.topip{
+    position: relative;
+    display: flex;
+}
+.topip i{
+    position: absolute;
+    left:13px;
+    top:11px;
+    color: rgba(128, 128, 128, 0.504);
+    font-size: 20px;
+}
+/*log in button*/
+.topip button{
+    color:#664AFA;
+    font-size: 20px;
+    background-color: transparent;
+    border:2px solid #664AFA;
+    border-radius: 30px;
+    width:130px;
+    margin-left:20px;
+    transition-duration: 0.7s;
+}
+/*hover for log in*/
+.topip button:hover{
+    background-color: #664AFA;
+    color:white;
+}
+/*screen 3*/
+.box{
+    width:100%;
+    padding-bottom: 60px;
+    background-color: #9a96ed15;
+     padding:150px 20px 60px 70px;
+}
+/*top button*/
+.pow{
+    border:none;
+    background-image: linear-gradient(90deg,rgba(229, 217, 253, 1),rgba(216, 238, 253, 1));
+    padding:10px 25px 10px 25px;
+    border-radius: 30px;
+    color:var(--blu);
+    font-size: var(--fts);
+    border: 2px solid #5e7ed5;
+    margin-bottom: 40px;
+    
+}
+.bx3 h1{
+    font-size: var(--h1size);
+}
+/*content*/
+.cont2{
+    width:60%;
+    position: relative;
+    margin: auto;
+    text-align: center;
+}
+.conta2{
+    display: flex;
+}
+/*color word*/
+.cont2 span{
+    background:linear-gradient(90deg, #8859F5,#4561F8);
+    background-clip : text;
+    -webkit-text-fill-color: transparent;
+}
+/*pargraph*/
+.par{
+    font-size: var(--psize);
+    line-height: 33px;
+    letter-spacing: 1px;
+    margin-top: 7px;
+    width:500px;
+   
+}
+.pars{
+    display: flex;
+    justify-content: center;
+}
+/*left images*/
+.lfimg{
+    height:200px;
+    width:300px;
+    position: absolute;
+    top: 39%;
+    left: 5%;
+    z-index: 1;
+    animation-name: ig;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;      
+}
+@keyframes ig{
+    from{
+        transform: translateY(0px);
+    }
+    to{
+          transform: translateY(20px);
+    }
+}
+.lfimg>img{
+    height:100%;
+    width:100%;
+        
+}
+/*right image*/
+.rgimg{
+    height:150px;
+    width:150px;
+    position: absolute;
+    z-index: 1;
+    left: 75%;
+    top: 36%;
+    animation-name: ig;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+     background-image: url(./Vector\ 6.png);
+    background-size: cover; 
+    
+}
+.rgimg>img{
+    height:100%;
+    width:100%;
+        
+}
+/*road map*/
+.road{
+    height:100px;
+    width:80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:20px;
+}
+.cr1,.cr2,.cr3{
+    position: relative;
+}
+
+/*one 01*/
+.one{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    background-color: var(--pur);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 33%;
+    top: -33%;
+
+
+}
+/*two 02*/
+.two{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    background-color: var(--blu);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 34%;
+    top: -33%;
+}
+/*three 03*/
+.three{
+    height:100px;
+    width:100px;
+    border-radius: 50%;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:yellowgreen;
+    position: absolute;
+   left: 34%;
+    top: -33%;
+}
+.road span{
+    font-size:60px;
+}
+/*inbetween dotted line*/
+.sp1{
+    background:linear-gradient(90deg, #8859F5,#4561F8);
+    background-clip : text;
+    color: transparent;
+}
+.sp2{
+    background:linear-gradient(90deg,#4561F8,yellowgreen);
+    background-clip : text;
+    color: transparent;
+}
+/*cardcontainer card*/
+.cardcontainer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cardcontainer>div{
+    height:300px;
+    width:300px;
+    padding:20px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.cr1{
+    background-image: linear-gradient(rgba(213, 189, 252, 0.404),rgba(240, 241, 250, 1));
+
+}
+.cr2{
+    background-image: linear-gradient(rgb(226, 235, 255),rgba(255, 255, 255, 1));
+
+}
+.cr3{
+    background-image: linear-gradient(rgb(215, 253, 235),rgba(255, 255, 255, 1));
+
+}
+.cr1:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 3px #8859F5 ;
+
+   
+}
+.cr2:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 3px #4561F8;
+
+   
+}
+.cr3:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 10px 3px rgb(78, 189, 137);
+
+   
+}
+/*card icon*/
+.ice{
+    height:80px;
+    width:80px;
+    border-radius: 10px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.ic1{
+    border: 1px solid #8859F5;
+    color:#8859F5;
+    background-color:rgba(229, 217, 253, 1) ;
+}
+.ic2{
+    border: 1px solid #4555e4;
+    color:#4555e4;
+    background-color:rgba(238, 243, 255, 1) ;
+}
+.ic3{
+     border: 1px solid #24ab38;
+    color:#24ab38;
+    background-color:rgba(238, 249, 245, 1) ;
+}
+/*card content*/
+.txt{
+    width:88%;
+    margin: auto;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+/*button*/
+.bt{
+    border:none;
+    border-radius: 30px;
+    font-size: 16px;
+    padding:10px 15px 10px 15px;
+}
+.bt1:hover{
+    background-color: #8859F5;
+    color:white;  
+}
+.bt1{
+        background-color:rgba(229, 217, 253, 1) ;
+        color:var(--pur)
+}
+.bt2{
+    background-color:rgba(238, 243, 255, 1) ;
+    color:var(--blu)
+
+}
+.bt2:hover{
+    background-color:var(--blu);
+    color:white;  
+}
+.bt3{
+    background-color:rgba(238, 249, 245, 1) ;
+    color:#24ab38;
+
+}
+.bt3:hover{
+    background-color: greenyellow;
+    color:white;  
+}
+/*footer*/
+footer{
+    height:max-content;
+    background-color: rgba(227, 232, 255, 1);
+    padding:50px;
+    
+}
+.fstff{
+     display: flex;
+      border-bottom: 2px solid #5e7ed5;
+      padding-bottom:50px;
+      flex-wrap: wrap;
+      gap:10px;
+}
+.fir{
+    width:600px;
+}
+.sec{
+   width:200px;
+    padding:20px;
+}
+.thrd{
+    width:200px;
+     padding:20px;
+}
+.four{
+    width:200px;
+     padding:20px;
+}
+.five{
+    width:150px;
+     padding:20px;
+}
+/*par*/
+.fir p{
+    font-size: 23px;
+    font-weight: 200;
+    margin-top: 7px;
+    margin-left: 10px;
+    line-height: 30px;
+    width:80%;
+}
+.input{
+    border:none;
+    background-color: white;
+    color:grey;
+    border-radius: 30px;
+    font-size: 18px;
+    width:200px;
+    display: inline-block;
+    padding: 10px 10px 10px 20px;
+          
+}
+.ipbut{
+    display: flex;
+    gap:20px;
+    margin-top:30px;
+}
+/*button*/
+.ipbut button{
+    border:none;
+    padding:10px 20px 10px 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(90deg,#8859F5,#4561F8);
+    color:white;
+    font-size: 19px;
+}
+.ipbut button:hover{
+    transform: scale(1.1);
+    
+}
+/*social media icone*/
+.tfig{
+    font-size: 40px;
+    color:grey;
+    margin-top:40px;
+    display: flex;
+    gap:15px;
+}
+/*icon*/
+.ipbut i{
+    margin-left:15px;
+}
+/*company p*/
+.sec p{
+    font-size:22px;
+    color:grey;
+    line-height: 45px;
+}
+.thrd p{
+    font-size:22px;
+    color:grey;
+    line-height: 45px;
+}
+.four p{
+    font-size:22px;
+    color:grey;
+    line-height: 45px;
+}
+.five p{
+    font-size:22px;
+    color:grey;
+    line-height: 45px;
+}
+footer h2{
+    margin-bottom: 20px;
+}
+/*footer bottom*/
+.copy{
+    margin-top:10px;
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+.topip button a{
+    text-decoration: none;
+}
+.fadeup{
+    animation-name: fadeup;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@keyframes fadeup{
+    from{
+        opacity: 0;
+        transform: translateY(10px) scale(0.5);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1246px){
+   .nav{
+    flex-wrap: wrap;
+
+   }
+   .rgimg{
+        left: 84%;
+   }
+   .lfimg{
+        left: 0%;
+            width: 215px;
+   }
+    .sp1{
+    display: none;
+   }
+      .sp2{
+    display: none;
+   }
+   .road{
+    justify-content: space-around;
+    width:100%;
+   }
+   .cardcontainer>div{
+    margin-top: 100px;
+    margin:20px;
+   }
+   
+   
+
+
+}
+@media only screen and (max-width:900px){
+    .nav{
+    flex-wrap: wrap;
+
+   }
+   .navs{
+    gap:10px;
+     margin:10px;
+   }    
+    .topip i{
+        color:black;
+        left:-10px;
+    }
+    .typehere{
+        display: none;
+    }
+    
+    .logo{
+        width:200px;
+    }
+     .topip button{
+        width:100px;
+        margin-left: 10px;
+        padding: 5px 10px 5px 10px;
+    }
+    .box{
+            padding: 180px 20px 40px 30px;
+    }
+    .cont2{
+        width:100%;
+    }
+     .rgimg{
+        display: none;
+   }
+   .lfimg{
+        display: none;
+   }
+   .cardcontainer>div{
+    margin-top: 100px;
+   }
+   .sp1{
+    display: none;
+   }
+      .sp2{
+    display: none;
+   }
+   
+  
+   
+
+}
+
+
+
+
+@media only screen and (max-width:600px){
+    .navs{
+        position: fixed;
+        background-color:white;
+        top: 89px;
+        left:-120%;
+        width:100%;
+        padding-top:20px;
+        padding-bottom:20px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .navs a:hover{
+        background-color: #674afad0;
+
+    }
+    .icon{
+        opacity: 1;
+    }
+    .icon2{
+        opacity: 1;
+    }
+    .abc:hover .navs{
+        left:0%;
+       
+    }
+    .typehere{
+        display: none;
+    }
+
+    .topip i{
+        color:black;
+         left:-20px;
+         top:8px;
+    }
+    .box {
+        padding: 180px 20px 40px 40px;}
+
+    .logo{
+        width:150px;
+        margin-left:0px;
+    }
+    .topip button{
+        width:70px;
+        margin-left: 10px;
+        padding: 5px 10px 5px 10px;
+        font-size: 14px;
+    }
+    .rgimg{
+        display: none;
+   }
+   .lfimg{
+        display: none;
+   }
+   .sp1{
+    display: none;
+   }
+      .sp2{
+    display: none;
+   }
+  .cardcontainer>div{
+    margin-top: 10px;
+    height: max-content;
+   }
+   .one{
+        left: -22%;
+    top: 32%;
+    height: 80px;
+    width: 80px;
+   }
+   .two{
+        left: -22%;
+    top: 32%;
+    height: 80px;
+    width: 80px;
+   }
+   .three{
+        left: -22%;
+    top: 32%;
+    height: 80px;
+    width: 80px;
+   }
+   .cont2{
+    width: 100%;
+   }
+   .ipbut{
+    flex-wrap: wrap;
+  }
+  .bx3 h1 {
+    font-size: 40px;
+  }
+
+
+       
+
+}
