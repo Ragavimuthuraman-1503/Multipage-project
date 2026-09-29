@@ -560,14 +560,15 @@ footer h2{
     .rgimg{
         display: none;
     }
-     .bx6 h1{
-        font-size: 40px;
-    }
+    
    .cont2{
     width: 100%;
    }
     .bx6 h1{
-    font-size: 30px;
+    font-size: 26px;
+   }
+   .qus{
+    width:100%;
    }
   .par{
     font-size: 18px;
